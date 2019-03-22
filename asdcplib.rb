@@ -1,12 +1,12 @@
 require "formula"
 
 class Asdcplib < Formula
-  homepage "https://github.com/MarcAntoine-Arnaud/asdcplib"
-  url "https://github.com/MarcAntoine-Arnaud/asdcplib.git", :branch => "master"
+  homepage "https://github.com/cinecert/asdcplib"
+  url "https://github.com/cinecert/asdcplib.git", :branch => "master"
   version "master"
 
   devel do
-    url "https://github.com/MarcAntoine-Arnaud/asdcplib.git", :branch => "develop"
+    url "https://github.com/cinecert/asdcplib.git", :branch => "develop"
     version "develop"
   end
 
