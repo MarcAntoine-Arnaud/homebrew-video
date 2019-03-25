@@ -13,7 +13,8 @@ class Asdcplib < Formula
   depends_on "openssl"
 
   def install
-    system "./configure", "--prefix=#{prefix}", "--enable-as-02", "--enable-phdr", "--enable-dev-headers", "--with-openssl=/usr/local/opt/openssl"
+    system "cmake", "-DOpenSSLLib_include_DIR=/usr/local/opt/openssl/include", "."
+    system "make"
     system "make", "install"
   end
 end
