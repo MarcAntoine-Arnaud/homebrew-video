@@ -11,6 +11,7 @@ class Asdcplib < Formula
   end
 
   depends_on "openssl"
+  depends_on "xerces-c"
 
   def install
     system "cmake", "-DOpenSSLLib_include_DIR=/usr/local/opt/openssl/include", "."
