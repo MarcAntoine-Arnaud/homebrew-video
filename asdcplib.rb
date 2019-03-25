@@ -10,11 +10,12 @@ class Asdcplib < Formula
     version "develop"
   end
 
+  depends_on "cmake" => :build
   depends_on "openssl"
   depends_on "xerces-c"
 
   def install
-    system "cmake", "-DOpenSSLLib_include_DIR=/usr/local/opt/openssl/include", "."
+    system "cmake", "-DOpenSSLLib_include_DIR=/usr/local/opt/openssl/include", "-DCMAKE_INSTALL_PREFIX=#{prefix}", "-DCMAKE_BUILD_TYPE=RELEASE", "."
     system "make"
     system "make", "install"
   end
