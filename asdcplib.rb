@@ -5,10 +5,10 @@ class Asdcplib < Formula
   url "https://github.com/cinecert/asdcplib.git", :branch => "master"
   version "master"
 
-  devel do
-    url "https://github.com/cinecert/asdcplib.git", :branch => "develop"
-    version "develop"
-  end
+  #devel do
+  #  url "https://github.com/cinecert/asdcplib.git", :branch => "develop"
+  #  version "develop"
+  #end
 
   depends_on "cmake" => :build
   depends_on "openssl"
